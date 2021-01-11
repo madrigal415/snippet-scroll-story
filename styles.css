@@ -1,0 +1,90 @@
+
+body {
+    margin:0;
+
+}
+
+.header {
+    position:fixed;
+    top:0;
+    display:grid;
+    grid-template-columns: minmax(20vw,200px) auto;
+    width:100%;
+    min-height: 10vh;
+    background: lightsalmon;
+    color: #333333;
+    margin: 0 auto;
+    text-align:center;
+    border-bottom: 2px solid #333333;
+}
+
+#mad {
+    display:grid;
+    background-color: bisque;
+    border-radius: 50%;
+    padding: 10px;
+    align-items:center;
+    place-self:center;
+    width: auto;
+    width: 100px;
+    height: 100px;
+    font-size: .7rem;
+    font-weight:bold;
+    font-family: Futura;
+}
+
+a{
+    text-decoration-line: none;
+    color:teal;
+} 
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* And our .slide-container has the styles to make each slide click into place on scroll */
+
+.slide-container { 
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/* So if the browser height is 600px then we’ll now
+have a value of 6 to work with. We can then pass this variable into our CSS: */
+
+.slide {
+    display:grid;
+    grid-template-columns: 30vw auto;
+    scroll-snap-align: start;
+    height: 100vh;
+     /* Fallback */
+    height: calc(var(--vh, 1vh) * 100);
+
+}
+
+.text {
+    display:grid;
+    background: lightsalmon;
+    place-content:center;
+    color: #333333;
+}
+
+.image {
+    margin: 6rem 3rem 3rem 3rem;
+    background-color: lightgray;
+    border-radius: 20px 20px;
+
+}
+
+#tacos {
+    background-color:pink;
+    }
+
+#burritos {
+    background-color:lightskyblue;
+    }
+
+#nachos {
+    background-color:lime;
+    }
