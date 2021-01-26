@@ -1,1 +1,1 @@
-# snippets-scroll-story
+# snippet-scroll-story
